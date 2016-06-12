@@ -1,8 +1,7 @@
 import pythoncom, pyHook, datetime, threading, time, sys
 import lcore, ecore, main_core
 print('initializing the thread...')
-time.sleep(.5)       
-
+time.sleep(.5)
 
 def OnKeyboardEventD(event):
     with threading.Lock():
@@ -23,7 +22,6 @@ def OnKeyboardEventexecU(event):
     with threading.Lock():
         ecore.objthread_up(event.Key, event.WindowName, datetime.datetime.now())
         return True
-
 
 def main():
     global local_counter
