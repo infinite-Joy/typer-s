@@ -10,8 +10,8 @@
 ###############################################################################################################################
 
 import threading, time, mntree_struct
-from settings import *
-from main_core import *
+from . import settings
+from . import main_core
 
 sdicti = mntree_struct.mntree()
 
